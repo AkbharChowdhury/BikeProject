@@ -1,13 +1,13 @@
 import ijson
-
 from classes import User
 
 
 def fetch_bike():
     with open("bike.json", "rb") as f:
         bike = {}
-        for field, data in ijson.kvitems(f, ""):
-            bike[field] = data
+
+        for key, value in ijson.kvitems(f, ""):
+            bike[key] = value
     return bike
 
 
