@@ -1,0 +1,16 @@
+{
+  "name": "Micheal Kennedy",
+  "age": "28",
+  "location": {
+    "city": "Portland",
+    "state": "Oregon"
+  },
+  "bike": "KTM Duke 690",
+  "rides": [
+    7,
+    103,
+    22,
+    "70",
+    1000
+  ]
+}
