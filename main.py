@@ -1,12 +1,11 @@
-import pprint
-import json
 import ijson
+
 from classes import User
 
 
 def fetch_bike():
     with open("bike.json", "rb") as f:
-        bike = {key: value for key, value in ijson.kvitems(f, "")}
+        bike = {k: v for k, v in ijson.kvitems(f, "")}
     return bike
 
 
